@@ -4,30 +4,28 @@ const word = "hello"
 const grandmaStatement = "I can't hear you!"
 
 function shout() {
-    console.log(word.toUpperCase())
     return word.toUpperCase();
 }
-shout()
 
 function whisper() {
-    console.log(word.toLowerCase())
     return word.toLowerCase();
 }
-whisper()
 
 function logShout() {
-    console.log(word.toUpperCase())
-    return word.toUpperCase();
+    console.log(shout(word))
 }
-logShout()
+
 
 function logWhisper() {
-    console.log(word.toLowerCase())
-    return word.toLowerCase();
+    console.log(whisper(word))
 }
-logWhisper()
 
-function sayHiToGrandma() {
-    return {
-        if (word = "hello")
-    }}
+function sayHiToGrandma(sentence) {
+    if (sentence == "I love you, Grandma.") {
+        return "I love you, too."
+      } else if (sentence == "HELLO") {
+          return "YES INDEED!"
+    } else if (sentence = "hello") {
+        return "I can't hear you!"
+    }
+}
